@@ -8,7 +8,7 @@ This example illustrates how to update the DevExpress Blazor [Chart](https://doc
 
 ![Blazor DxCharts update the data source](/charts.gif)
 
-Set the Grid's [FocusedRowEnabled](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxGrid.FocusedRowEnabled) property to `true` to enable the focused row option. When the focused row changes, the Grid raises its [FocusedRowChanged](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxGrid.FocusedRowChanged) event. Handle this event to update the DxChart's [data](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxChart-1.Data) based on the [focused data item](https://docs.devexpress.com/Blazor/DevExpress.Blazor.GridFocusedRowChangedEventArgs.DataItem).
+Set the Grid's [FocusedRowEnabled](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxGrid.FocusedRowEnabled) property to `true` to allow users to focus grid rows. When focus moves between rows, the Grid raises its [FocusedRowChanged](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxGrid.FocusedRowChanged) event. Handle this event to update the DxChart's [data](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxChart-1.Data) according to the currently [focused data item](https://docs.devexpress.com/Blazor/DevExpress.Blazor.GridFocusedRowChangedEventArgs.DataItem).
 
 ## Files to Review
 
