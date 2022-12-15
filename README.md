@@ -4,7 +4,7 @@
 <!-- default badges end -->
 # Charts for Blazor - How to display the Chart based on the Grid focus
 
-This example illustrates how to update the DevExpress Blazor [Chart](https://docs.devexpress.com/Blazor/401180/charts) component's data once the [Grid](https://docs.devexpress.com/Blazor/403143/grid)'s focused row changes.
+This example illustrates how to update the DevExpress Blazor [Chart](https://docs.devexpress.com/Blazor/401180/charts) component's data according to the currently focused row in the [Grid](https://docs.devexpress.com/Blazor/403143/grid).
 
 ![Blazor DxCharts update the data source](/charts.gif)
 
