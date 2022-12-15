@@ -27,18 +27,16 @@
     int Year;
     public IEnumerable<Sales> SelectedChartData;
     List<Sales> GridData = new List<Sales>();
-    List<Sales> allData = Sales.GetSalesList();
+    List<Sales> AllData = Sales.GetSalesList();
 
     protected override async Task OnInitializedAsync() {
-        GridData = allData.GroupBy(i => i.Year).Select(g => g.First()).ToList();
-        Year = GridData.First().Year;
-        SelectedChartData = allData.Where(i => i.Year == Year);
+        GridData = AllData.GroupBy(i => i.Year).Select(g => g.First()).ToList();
     }
     void OnFocusedRowChanged(GridFocusedRowChangedEventArgs e) {
         if (e.DataItem != null) {
             Sales focusedDataItem = (Sales)e.DataItem;
             Year = focusedDataItem.Year;
-            SelectedChartData = allData.Where(i => i.Year == Year);
+            SelectedChartData = AllData.Where(i => i.Year == Year);
         }
     }    
 }
