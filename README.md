@@ -2,13 +2,13 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1132360)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-# Charts for Blazor - How to display the chart based on Grid focus
+# Charts for Blazor - How to display the Chart based on the Grid focus
 
-This example illustrates how to update the DevExpress Blazor [Chart](https://docs.devexpress.com/Blazor/401180/charts) component's data source once the [Grid](https://docs.devexpress.com/Blazor/403143/grid)'s focused row changes.
+This example illustrates how to update the DevExpress Blazor [Chart](https://docs.devexpress.com/Blazor/401180/charts) component's data once the [Grid](https://docs.devexpress.com/Blazor/403143/grid)'s focused row changes.
 
 ![Blazor DxCharts update the data source](/charts.gif)
 
-Set the Grid's [FocusedRowEnabled](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxGrid.FocusedRowEnabled) property to `true` to enable the focused row option. When focused row changes, the Grid raises its [FocusedRowChanged](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxGrid.FocusedRowChanged) event. Handle this event to update the DxChart's [data source](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxChart-1.Data) depending on the [focused data item](https://docs.devexpress.com/Blazor/DevExpress.Blazor.GridFocusedRowChangedEventArgs.DataItem).
+Set the Grid's [FocusedRowEnabled](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxGrid.FocusedRowEnabled) property to `true` to enable the focused row option. When the focused row changes, the Grid raises its [FocusedRowChanged](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxGrid.FocusedRowChanged) event. Handle this event to update the DxChart's [data](https://docs.devexpress.com/Blazor/DevExpress.Blazor.DxChart-1.Data) based on the [focused data item](https://docs.devexpress.com/Blazor/DevExpress.Blazor.GridFocusedRowChangedEventArgs.DataItem).
 
 ## Files to Review
 
