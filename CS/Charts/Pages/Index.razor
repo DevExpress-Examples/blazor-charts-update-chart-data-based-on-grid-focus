@@ -29,7 +29,7 @@
     List<Sales> GridData = new List<Sales>();
     List<Sales> AllData = Sales.GetSalesList();
 
-    protected override async Task OnInitializedAsync() {
+    protected override void OnInitialized() {
         GridData = AllData.GroupBy(i => i.Year).Select(g => g.First()).ToList();
     }
     void OnFocusedRowChanged(GridFocusedRowChangedEventArgs e) {
